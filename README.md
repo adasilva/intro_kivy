@@ -8,8 +8,11 @@ This is meant to be an instructor-guided introduction to kivy for an audience wh
 For each topic, the presentation gives an explanation of the existing code followed by an exercise for the audience to work through. The topics are:
 
 01: building blocks: Explains the building blocks of kivy using only python
+
 02: kivy language: Introduces the kivy language
+
 03: buttons and binding: How to add buttons and bind functions to them
+
 04: nested layouts: Nesting layouts can not only provide structure, but decrease repetition
 
 The presentation also includes a brief description of ways to package for android, with a focus on the buildozer tool.
