@@ -1,0 +1,49 @@
+<MainScreen>:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            text: 'Workout'
+            size_hint_x: 2/3.
+        Label:
+            text: 'Day'
+            size_hint_x: 1/6.
+        Label:
+            text: 'Time'
+            size_hint_x: 1/6.
+
+    WorkoutLayout:
+        id: workout1
+    WorkoutLayout:
+        id: workout2
+    WorkoutLayout:
+        id: workout3
+    WorkoutLayout:
+        id: workout4
+    WorkoutLayout:
+        id: workout5
+    WorkoutLayout:
+        id: workout6
+    WorkoutLayout:
+        id: workout7
+
+    Button: 
+        text: 'Save'
+        on_press: root.save()
+
+
+<WorkoutLayout>:
+    size_hint_x: 1
+    orientation: 'horizontal'
+    TextInput:
+        id: workoutInput
+        size_hint_x: 2/3.
+    TextInput:
+        id: dayInput
+        size_hint_x: 1/6.
+    TextInput:
+        id: timeInput
+        size_hint_x: 1/6.
+
+TextInput:
+    multiline: False
