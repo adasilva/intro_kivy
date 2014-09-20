@@ -6,7 +6,7 @@ from kivy.uix.gridlayout import GridLayout
 
 class MainScreen(GridLayout):
     def __init__(self,**kwargs):
-        super(MainScreen,self).__init__(**kwargs) # implements the features of a GridLayout (the base class of MinScreen)
+        super(MainScreen,self).__init__(**kwargs) # implements the features of a GridLayout (the base class of MainScreen)
         
 
 class WorkoutApp(App):
