@@ -1,52 +1,74 @@
 <MainScreen>:
-    cols: 3
+    cols: 4
+    Label:
+        text: 'Status'
+        size_hint_x: 1/8.
     Label:
         text: 'Workout'
-        size_hint_x: 2/3.
+        size_hint_x: 5/8.
     Label:
         text: 'Day'
-        size_hint_x: 1/6.
+        size_hint_x: 1/8.
     Label:
         text: 'Time'
-        size_hint_x: 1/6.
+        size_hint_x: 1/8.
+
+
+
+    CheckBox:
+        id: checkbox1
+        size_hint_x: 1/8.
 
     TextInput:
-        id: workoutInput
-        size_hint_x: 2/3.
+        id: workoutInput1
+        size_hint_x: 5/8.
 
     TextInput:
-        id: dayInput
-        size_hint_x: 1/3.
+        id: dayInput1
+        size_hint_x: 1/8.
 
     TextInput:
-        id: timeInput
-        size_hint_x: 1/6.
+        id: timeInput1
+        size_hint_x: 1/8.
+
+
+
+    CheckBox:
+        id: checkbox2
+        size_hint_x: 1/8.
 
     TextInput:
         id: workoutInput2
-        size_hint_x: 2/3.
+        size_hint_x: 5/8.
 
     TextInput:
         id: dayInput2
-        size_hint_x: 1/3.
+        size_hint_x: 1/8.
 
     TextInput:
         id: timeInput2
-        size_hint_x: 1/6.
+        size_hint_x: 1/8.
+
+
+    CheckBox:
+        id: checkbox3
+        size_hint_x: 1/8.
 
     TextInput:
         id: workoutInput3
-        size_hint_x: 2/3.
+        size_hint_x: 5/8.
 
     TextInput:
         id: dayInput3
-        size_hint_x: 1/3.
+        size_hint_x: 1/8.
 
     TextInput:
         id: timeInput3
-        size_hint_x: 1/6.
+        size_hint_x: 1/8.
+
 
     Button: 
+        size_hint_x: 1/8.
         text: 'Save'
         on_press: root.save()
 
