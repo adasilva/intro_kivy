@@ -11,7 +11,7 @@ class MainScreen(GridLayout):
     def save(self):
         '''Saves the data from the input to a text file.
     It is bound to the save button'''
-        status1 = self.ids.checkbox1.active #active is boolean (True or False)
+        status1 = self.ids.checkbox1.active  #active is boolean (True or False)
         workout1 = self.ids.workoutInput1.text
         day1 = self.ids.dayInput1.text
         time1 = self.ids.timeInput1.text
