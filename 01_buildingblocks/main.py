@@ -7,8 +7,6 @@ from kivy.uix.textinput import TextInput
 
 class MainScreen(GridLayout):
     def __init__(self,**kwargs):
-        # add widgets...
-
         super(MainScreen,self).__init__(**kwargs) # implements the features of a GridLayout (the base class of MinScreen)
         self.cols=3
         
@@ -16,7 +14,7 @@ class MainScreen(GridLayout):
         l2=Label(text='Day')
         l3=Label(text='Time')
 
-        in1=TextInput(multiline=False)  # multiline determines if more than one line of text is allowed
+        in1=TextInput(multiline=False)  # multiline determines if more than one line of text is allowed (optional argument)
         in2=TextInput(multiline=False)
         in3=TextInput(multiline=False)
 
@@ -28,12 +26,12 @@ class MainScreen(GridLayout):
         self.add_widget(in3)
         
 
-class WorkoutApp(App):
+class WorkoutApp(App): # Inherits all properties of App 
     def build(self):
         return MainScreen()
 
 
 if __name__=='__main__':
-    WorkoutApp().run()
+    WorkoutApp().run()  # run() is a method of kivy App class
 
 
