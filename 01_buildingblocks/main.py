@@ -1,5 +1,4 @@
 from kivy.app import App
-from kivy.app import Widget
 
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.label import Label
@@ -8,6 +7,8 @@ from kivy.uix.textinput import TextInput
 
 class MainScreen(GridLayout):
     def __init__(self,**kwargs):
+        # add widgets...
+
         super(MainScreen,self).__init__(**kwargs) # implements the features of a GridLayout (the base class of MinScreen)
         self.cols=3
         
@@ -36,7 +37,3 @@ if __name__=='__main__':
     WorkoutApp().run()
 
 
-
-# NOTE: running is diff on diff platforms
-# python main.py
-# kivy main.py
