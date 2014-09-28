@@ -1,10 +1,10 @@
-The libreoffice presentation (file ending in .odp) is provided under a Creative Commons Attribution 4.0 License
+The slides are provided under a Creative Commons Attribution 4.0 License
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Introduction to Kivy</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Ashley DaSilva</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
 -----------
 
-All software (files ending in .py, .kv, and .apk) are distributed under the MIT License: 
+All software is distributed under the MIT License: 
 
 The MIT License (MIT)
 

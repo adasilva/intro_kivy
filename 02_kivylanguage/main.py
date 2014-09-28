@@ -1,5 +1,4 @@
 from kivy.app import App
-from kivy.app import Widget
 
 from kivy.uix.gridlayout import GridLayout
 
@@ -16,9 +15,3 @@ class WorkoutApp(App):
 
 if __name__=='__main__':
     WorkoutApp().run()
-
-
-
-# NOTE: running is diff on diff platforms
-# python main.py
-# kivy main.py
