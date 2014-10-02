@@ -1,0 +1,68 @@
+<MainScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            orientation: 'horizontal'
+            Label:
+                text: 'Workout'
+                size_hint_x: 2/3.
+            Label:
+                text: 'Day'
+                size_hint_x: 1/6.
+            Label:
+                text: 'Time'
+                size_hint_x: 1/6.
+
+        WorkoutLayout:
+            id: workout1
+        WorkoutLayout:
+            id: workout2
+        WorkoutLayout:
+            id: workout3
+        WorkoutLayout:
+            id: workout4
+        WorkoutLayout:
+            id: workout5
+        WorkoutLayout:
+            id: workout6
+        WorkoutLayout:
+            id: workout7
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Button: 
+                text: 'Save'
+                on_press: root.save()
+            Button:
+                text: 'Next screen'
+                on_press: root.manager.current = 'secondary'
+
+<SecondScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            size_hint_y: 3/4.
+            text: 'Hello second screen!'
+        Button:
+            size_hint: (1/4.,1/4.)
+            text: 'Back to main screen'
+            on_press: root.manager.current = 'main'
+
+<WorkoutLayout>:
+    size_hint_x: 1
+    orientation: 'horizontal'
+    CheckBox:
+        id: status
+        size_hint_x: 1/8.
+    TextInput:
+        id: workoutInput
+        size_hint_x: 5/8.
+    TextInput:
+        id: dayInput
+        size_hint_x: 1/8.
+    TextInput:
+        id: timeInput
+        size_hint_x: 1/8.
+
+TextInput:
+    multiline: False
